@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html styles.css script.js _site/
+          cp -R learn _site/learn
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

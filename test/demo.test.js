@@ -36,6 +36,7 @@ test("page references local assets and includes key accessible landmarks", () =>
   assert.match(html, /<main id="main">/);
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /href="#main">Skip to main content/);
+  assert.match(html, /href="\/public\/learn\/">Start learning/);
   assert.match(html, /src="script\.js"/);
   assert.match(html, /href="styles\.css"/);
   assert.equal(fs.existsSync(path.join(root, "script.js")), true);
