@@ -1,4 +1,4 @@
-# CS-Geni public demo
+# CS-Geni
 
 A small, public-facing demonstration of the CS-Geni mission: making computer science approachable from a learner’s first questions through professional growth.
 
@@ -17,23 +17,6 @@ The site is intentionally dependency-free and works as a static GitHub Pages pro
 ## What this repository is not
 
 This is **not** the CS-Geni production platform. It does not contain private curriculum, proprietary business logic, backend services, production configuration, learner data, credentials, or code copied from private repositories.
-
-## Run locally
-
-No install or build step is required. Either open `index.html` directly or serve the directory with any static web server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit <http://localhost:8000>.
-
-Node.js 20 or newer is required only for the automated checks:
-
-```bash
-npm test
-npm run check
-```
 
 ## Deploy to GitHub Pages
 
