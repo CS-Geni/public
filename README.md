@@ -37,8 +37,6 @@ The public site includes three small, original interactions:
 | **Loops** | Step through three robots | A loop repeats one instruction for each item |
 | **Stacks** | Push and pop blocks | The last item added is the first item removed |
 
-[Open the interactive demo](https://cs-geni.github.io/public/) or [share an idea](https://github.com/CS-Geni/public/issues).
-
 ## What is public here
 
 This repository contains the static showcase, its original visual assets, and lightweight tests. It does **not** contain the production platform, full curriculum, learner data, private services, credentials, or code from private CS-Geni systems.
