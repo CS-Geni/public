@@ -1,28 +1,51 @@
 # CS-Geni
 
+> A visual, beginner-friendly introduction to computer science and the mission behind CS-Geni.
+
+![Preview of the CS-Geni public demo showing interactive lessons for variables, loops, and stacks](assets/cs-geni-preview.svg)
+
 ## About CS-Geni
 
-CS-Geni is a free learning platform designed to help people with no computer-science background grow from first principles toward professional skills. Structured learning paths combine clear visual explanations, hands-on practice, meaningful projects, and progress tracking so learners can build confidence one step at a time.
+CS-Geni is a free learning platform for people starting with no computer science background. It uses structured paths, visual explanations, hands-on practice, projects, and progress tracking to help learners move from first principles toward professional skills.
 
-Our mission is to make rigorous computer science education approachable and accessible. This public repository is a small interactive showcase of that vision—not the production application or the full curriculum.
+Our mission is to make rigorous computer science education approachable and accessible. This repository is a small interactive showcase of that vision—not the production application or the full curriculum.
 
-A small, public-facing demonstration of the CS-Geni mission: making computer science approachable from a learner’s first questions through professional growth.
+## The learning journey
 
-The site is intentionally dependency-free and works as a static GitHub Pages project. It includes three beginner-readable interactive examples:
+```mermaid
+flowchart LR
+    A["No CS background"] --> B["Foundations"]
+    B --> C["Programming"]
+    C --> D["Core CS"]
+    D --> E["Systems / Data / Security"]
+    E --> F["Projects"]
+    F --> G["Professional skills"]
 
-- values and variables;
-- a step-by-step loop visualizer;
-- a push/pop stack demonstration.
+    classDef start fill:#12261b,stroke:#60f28c,color:#f2f4df,stroke-width:2px
+    classDef path fill:#10231b,stroke:#ff9654,color:#f2f4df
+    classDef goal fill:#60f28c,stroke:#2dde68,color:#07110e,stroke-width:2px
+    class A start
+    class B,C,D,E,F path
+    class G goal
+```
 
-## What this repository is
+Each stage builds on the last. Learners first understand the ideas, then write code, connect concepts, and use them in projects.
 
-- An original visual introduction to CS-Geni
-- A lightweight place to explore accessible learning interactions
-- A safe public surface for community feedback and contribution
+## Explore the demo
 
-## What this repository is not
+The public site includes three small, original interactions:
 
-This is **not** the CS-Geni production platform. It does not contain private curriculum, proprietary business logic, backend services, production configuration, learner data, credentials, or code copied from private repositories.
+| Demo | Try it | See the idea |
+| --- | --- | --- |
+| **Values and variables** | Change a name and number | A variable keeps a value under a useful name |
+| **Loops** | Step through three robots | A loop repeats one instruction for each item |
+| **Stacks** | Push and pop blocks | The last item added is the first item removed |
+
+[Open the interactive demo](https://cs-geni.github.io/public/) or [share an idea](https://github.com/CS-Geni/public/issues).
+
+## What is public here
+
+This repository contains the static showcase, its original visual assets, and lightweight tests. It does **not** contain the production platform, full curriculum, learner data, private services, credentials, or code from private CS-Geni systems.
 
 ## Deploy to GitHub Pages
 
