@@ -1,5 +1,11 @@
 # CS-Geni
 
+## About CS-Geni
+
+CS-Geni is a free learning platform designed to help people with no computer-science background grow from first principles toward professional skills. Structured learning paths combine clear visual explanations, hands-on practice, meaningful projects, and progress tracking so learners can build confidence one step at a time.
+
+Our mission is to make rigorous computer science education approachable and accessible. This public repository is a small interactive showcase of that vision—not the production application or the full curriculum.
+
 A small, public-facing demonstration of the CS-Geni mission: making computer science approachable from a learner’s first questions through professional growth.
 
 The site is intentionally dependency-free and works as a static GitHub Pages project. It includes three beginner-readable interactive examples:
