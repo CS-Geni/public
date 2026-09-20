@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="CS-Geni is building a free, welcoming path from computer science beginner to confident professional."
+    >
+    <meta name="theme-color" content="#07110e">
+    <title>CS-Geni — Computer science, made explorable</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CS-Geni home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>CS-Geni</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#mission">Mission</a>
+        <a href="#playground">Playground</a>
+        <a href="#journey">Journey</a>
+        <a class="nav-cta" href="https://github.com/CS-Geni">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Free to learn. Built for everyone.</p>
+          <h1 id="hero-title">Computer science is a <span>world you can enter.</span></h1>
+          <p class="hero-lede">
+            CS-Geni imagines a clear, playful path from your first variable to professional confidence—
+            without assuming you already know the secret handshake.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#playground">Try a tiny lesson <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://github.com/CS-Geni">Meet us on GitHub</a>
+          </div>
+          <p class="demo-note">
+            <strong>Honest note:</strong> this repository is a small, original public demo of our direction.
+            It is not the production learning platform or its curriculum.
+          </p>
+        </div>
+
+        <div class="hero-terminal" aria-label="Decorative code terminal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <p>hello-learner.js</p>
+          </div>
+          <pre><code><span class="code-muted">// Every expert started here.</span>
+<span class="code-keyword">const</span> learner = {
+  curious: <span class="code-orange">true</span>,
+  experience: <span class="code-orange">0</span>,
+  potential: <span class="code-green">"unlimited"</span>
+};
+
+learn(learner);
+<span class="code-muted">// → one small step at a time</span></code></pre>
+          <div class="terminal-output"><span>›</span> Ready when you are.<span class="cursor" aria-hidden="true"></span></div>
+        </div>
+      </section>
+
+      <section class="mission section" id="mission" aria-labelledby="mission-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Why we are here</p>
+          <h2 id="mission-title">Talent is everywhere.<br>Clear pathways are not.</h2>
+        </div>
+        <div class="mission-content">
+          <p class="big-copy">
+            We want computer science education to feel less like a gate and more like an invitation.
+          </p>
+          <p>
+            CS-Geni’s mission is to help learners move from “What does that mean?” to “I can build
+            that”—with plain language, visual practice, useful feedback, and room to grow at their own pace.
+          </p>
+          <div class="principles" role="list" aria-label="CS-Geni principles">
+            <div role="listitem"><span aria-hidden="true">01</span><strong>Start where you are</strong></div>
+            <div role="listitem"><span aria-hidden="true">02</span><strong>See ideas in motion</strong></div>
+            <div role="listitem"><span aria-hidden="true">03</span><strong>Build toward real skills</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="playground section" id="playground" aria-labelledby="playground-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">02 / Learn by changing things</p>
+          <h2 id="playground-title">Small experiments.<br><span>Big lightbulb moments.</span></h2>
+          <p>These original mini-demos show how CS-Geni can make invisible ideas visible.</p>
+        </div>
+
+        <div class="demo-grid">
+          <article class="demo-card" aria-labelledby="variable-title">
+            <div class="demo-label"><span>01</span> Values &amp; variables</div>
+            <h3 id="variable-title">Give a value a name</h3>
+            <p>A variable is a labeled place to keep a value. Change the inputs and watch the sentence update.</p>
+            <div class="demo-workspace">
+              <div class="code-panel">
+                <label for="learner-name">Name</label>
+                <input id="learner-name" type="text" value="Ada" maxlength="20" autocomplete="off">
+                <label for="learner-points">Points: <output id="points-label" for="learner-points">3</output></label>
+                <input id="learner-points" type="range" min="0" max="10" value="3">
+              </div>
+              <div class="result-panel" aria-live="polite">
+                <span class="result-kicker">output</span>
+                <p id="variable-output">Ada has 3 points.</p>
+                <div class="memory-row">
+                  <span>name</span><code id="name-memory">"Ada"</code>
+                  <span>points</span><code id="points-memory">3</code>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="demo-card" aria-labelledby="loop-title">
+            <div class="demo-label"><span>02</span> Loops</div>
+            <h3 id="loop-title">Repeat without repeating yourself</h3>
+            <p>A loop runs the same instruction for each item. Step through three friendly robots.</p>
+            <div class="demo-workspace">
+              <pre class="code-panel code-sample" aria-label="Loop example"><code><span class="code-keyword">for</span> (robot <span class="code-keyword">of</span> robots) {
+  robot.wave();
+}</code></pre>
+              <div class="result-panel loop-result">
+                <span class="result-kicker">loop state</span>
+                <div class="robots" aria-label="Three robots">
+                  <span class="robot" data-robot="0">▣<small>Beep</small></span>
+                  <span class="robot" data-robot="1">▣<small>Boop</small></span>
+                  <span class="robot" data-robot="2">▣<small>Byte</small></span>
+                </div>
+                <p id="loop-status" aria-live="polite">Press “Next step” to begin.</p>
+                <div class="demo-actions">
+                  <button class="button button-small button-primary" id="loop-next" type="button">Next step</button>
+                  <button class="button button-small button-ghost" id="loop-reset" type="button">Reset</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="demo-card" aria-labelledby="stack-title">
+            <div class="demo-label"><span>03</span> Data structures</div>
+            <h3 id="stack-title">Stack it up, take it down</h3>
+            <p>A stack uses “last in, first out”—like plates in a cupboard. Add and remove colorful blocks.</p>
+            <div class="demo-workspace">
+              <div class="code-panel stack-controls">
+                <label for="stack-value">Block label</label>
+                <input id="stack-value" type="text" maxlength="10" value="A" autocomplete="off">
+                <button class="button button-small button-primary" id="stack-push" type="button">Push block</button>
+                <button class="button button-small button-ghost" id="stack-pop" type="button">Pop block</button>
+              </div>
+              <div class="result-panel">
+                <span class="result-kicker">top of stack</span>
+                <div class="stack-visual" id="stack-visual" aria-live="polite" aria-label="Stack with one block">
+                  <span class="stack-block">A</span>
+                </div>
+                <p id="stack-status">A is on top.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="journey section" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / A path with momentum</p>
+          <h2 id="journey-title">Begin curious.<br>Grow capable.</h2>
+          <p>
+            The vision is a learning journey that respects beginners while aiming toward genuine,
+            professional computer science fluency.
+          </p>
+        </div>
+        <ol class="journey-list">
+          <li>
+            <span class="journey-icon" aria-hidden="true">?</span>
+            <div><p>Explore</p><h3>Make ideas click</h3><span>Visual explanations and tiny experiments build intuition.</span></div>
+          </li>
+          <li>
+            <span class="journey-icon" aria-hidden="true">{ }</span>
+            <div><p>Practice</p><h3>Turn concepts into code</h3><span>Guided challenges make each new skill usable.</span></div>
+          </li>
+          <li>
+            <span class="journey-icon" aria-hidden="true">↗</span>
+            <div><p>Build</p><h3>Create things that matter</h3><span>Projects connect fundamentals to real-world problem solving.</span></div>
+          </li>
+          <li>
+            <span class="journey-icon" aria-hidden="true">★</span>
+            <div><p>Grow</p><h3>Keep becoming</h3><span>A foundation for deeper study, collaboration, and a career.</span></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="open-invite section" aria-labelledby="invite-title">
+        <div class="pixel-spark spark-one" aria-hidden="true">✦</div>
+        <div class="pixel-spark spark-two" aria-hidden="true">+</div>
+        <p class="eyebrow">A public starting point</p>
+        <h2 id="invite-title">Help us make the invitation wider.</h2>
+        <p>
+          This demo is intentionally small and contains no production code, private curriculum, or backend
+          systems. Ideas, accessibility feedback, and public-safe contributions are welcome.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/CS-Geni/public">View the public repository</a>
+          <a class="button button-secondary" href="https://github.com/CS-Geni/public/issues">Share an idea</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>CS-Geni</a>
+      <p>Learning should feel possible.</p>
+      <p>Public demo · <span id="current-year">2026</span></p>
+    </footer>
+  </body>
+</html>
