@@ -1,9 +1,5 @@
 # CS-Geni
 
-> A visual, beginner-friendly introduction to computer science and the mission behind CS-Geni.
-
-![Preview of the CS-Geni public demo showing interactive lessons for variables, loops, and stacks](assets/cs-geni-preview.svg)
-
 ## About CS-Geni
 
 CS-Geni is a free learning platform for people starting with no computer science background. It uses structured paths, visual explanations, hands-on practice, projects, and progress tracking to help learners move from first principles toward professional skills.
