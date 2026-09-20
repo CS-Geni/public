@@ -23,8 +23,6 @@ flowchart LR
     class G goal
 ```
 
-Each stage builds on the last. Learners first understand the ideas, then write code, connect concepts, and use them in projects.
-
 ## License
 
 Original demo code in this repository is available under the [MIT License](LICENSE).
