@@ -2,7 +2,6 @@
 
 [Start learning with CS-Geni](https://cs-geni.github.io/public/).
 
-![CS-Geni learning platform preview](showcase/assets/cs-geni-preview.svg)
 
 ## About CS-Geni
 
