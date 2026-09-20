@@ -26,8 +26,8 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html styles.css script.js _site/
-          cp -R learn _site/learn
+          cp index.html cs-geni-logo.png _site/
+          cp -R assets showcase _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

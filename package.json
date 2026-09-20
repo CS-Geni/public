@@ -2,10 +2,10 @@
   "name": "cs-geni-public-demo",
   "version": "1.0.0",
   "private": true,
-  "description": "A small public-facing interactive demo of the CS-Geni learning mission.",
+  "description": "Public Pages artifact and showcase checks for the CS-Geni learning platform.",
   "scripts": {
     "test": "node --test",
-    "check": "node --check script.js && node --test"
+    "check": "node --check showcase/script.js && node --test"
   },
   "license": "MIT",
   "engines": {

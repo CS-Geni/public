@@ -1,10 +1,14 @@
 # CS-Geni
 
+[Start learning with CS-Geni](https://cs-geni.github.io/public/).
+
+![CS-Geni learning platform preview](showcase/assets/cs-geni-preview.svg)
+
+## About CS-Geni
+
 CS-Geni is a free learning platform for people starting with no computer science background. It uses structured paths, visual explanations, hands-on practice, projects, and progress tracking to help learners move from first principles toward professional skills.
 
-Our mission is to make rigorous computer science education approachable and accessible. This repository is a small interactive showcase of that vision—not the production application or the full curriculum.
-
-**[Start learning](https://cs-geni.github.io/public/learn/)** — explore the free course catalog, lessons, and browser-local progress tracking.
+Our mission is to make rigorous computer science education approachable and accessible. The live site at [cs-geni.github.io/public](https://cs-geni.github.io/public/) is the learning platform: a static GitHub Pages build of the private `CS-Geni/codebase` repository's `main` branch.
 
 ## The learning journey
 
@@ -24,6 +28,30 @@ flowchart LR
     class B,C,D,E,F path
     class G goal
 ```
+
+Each stage builds on the last. Learners first understand the ideas, then write code, connect concepts, and use them in projects.
+
+## Explore CS-Geni
+
+[Open the learning platform](https://cs-geni.github.io/public/) to browse courses, lessons, and resources with progress saved in your browser.
+
+The original interactive demo remains available as the [public showcase](https://cs-geni.github.io/public/showcase/).
+
+## What is public here
+
+This repository contains the compiled static learning frontend, the original showcase and its visual assets, and lightweight tests. It does **not** contain private application source, server code, learner data, credentials, or private services.
+
+### How the app is published
+
+The frontend is built from private `CS-Geni/codebase` `main` with `VITE_BASE_PATH=/public/` and `VITE_STATIC_DEPLOYMENT=true`. Only compiled `dist/` output is committed here; no server code, source files, curriculum internals, or secrets are published.
+
+## Contributing
+
+Issues and pull requests that improve clarity, accessibility, visual polish, or the public showcase are welcome. Keep changes focused, beginner-friendly, and suitable for a fully public repository. Run `npm run check` before submitting a pull request.
+
+## Privacy and security
+
+Never submit secrets, credentials, personal learner data, private curriculum, proprietary material, production configuration, or implementation copied from private CS-Geni systems. Treat every commit, issue, build log, and pull request in this repository as public.
 
 ## License
 
