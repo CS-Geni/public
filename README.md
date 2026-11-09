@@ -2,23 +2,30 @@
 
 [Start learning with CS-Geni](https://cs-geni.github.io/public/).
 
+CS-Geni is a free learning platform for people starting with no computer science background. The site is a staged path of 12 tracks and 15 courses: visual explanations, practice, projects, and progress saved in the browser. This repository is the website. The study map, the labs, and the capstone briefs live beside it.
 
-## About CS-Geni
+## Start here
 
-CS-Geni is a free learning platform for people starting with no computer science background. It uses structured paths, visual explanations, hands-on practice, projects, and progress tracking to help learners move from first principles toward professional skills.
+| You want to | Go to |
+| --- | --- |
+| Take a lesson | [cs-geni.github.io/public](https://cs-geni.github.io/public/) |
+| See the whole path on one page | [CS-Geni/curriculum](https://github.com/CS-Geni/curriculum) |
+| Run a small program and its tests | [CS-Geni/labs](https://github.com/CS-Geni/labs) |
+| Read a capstone before you build it | [CS-Geni/projects](https://github.com/CS-Geni/projects) |
+| Try the original three demos | [Showcase](https://cs-geni.github.io/public/showcase/) |
 
-Our mission is to make rigorous computer science education approachable and accessible. The live site at [cs-geni.github.io/public](https://cs-geni.github.io/public/) is the learning platform: a static GitHub Pages build of the private `CS-Geni/codebase` repository's `main` branch.
+About 482 hours and 145 lessons are mapped in the curriculum. Hours are a plan, not a deadline.
 
-## The learning journey
+## The path
 
 ```mermaid
 flowchart LR
-    A["No CS background"] --> B["Foundations"]
+    A["No CS background"] --> B["On-ramp"]
     B --> C["Programming"]
-    C --> D["Core CS"]
-    D --> E["Systems / Data / Security"]
-    E --> F["Projects"]
-    F --> G["Professional skills"]
+    C --> D["Algorithms and math"]
+    D --> E["Machine, OS, networks, data"]
+    E --> F["Ship, secure, and model"]
+    F --> G["A tiny language"]
 
     classDef start fill:#12261b,stroke:#60f28c,color:#f2f4df,stroke-width:2px
     classDef path fill:#10231b,stroke:#ff9654,color:#f2f4df
@@ -28,30 +35,55 @@ flowchart LR
     class G goal
 ```
 
-Each stage builds on the last. Learners first understand the ideas, then write code, connect concepts, and use them in projects.
+| Step | Course | Track | Hours |
+| --- | --- | --- | --- |
+| 1 | [Computer Science Without the Jargon](https://github.com/CS-Geni/curriculum/blob/main/courses/computer-thinking.md) | Start from zero | 8h |
+| 2 | [Python: Your First Programs](https://github.com/CS-Geni/curriculum/blob/main/courses/python-first-steps.md) | Programming foundations | 24h |
+| 3 | [Designing Reliable Programs](https://github.com/CS-Geni/curriculum/blob/main/courses/program-design.md) | Programming foundations | 28h |
+| 4 | [Data Structures in Practice](https://github.com/CS-Geni/curriculum/blob/main/courses/data-structures.md) | Data structures & algorithms | 34h |
+| 5 | [Algorithmic Problem Solving](https://github.com/CS-Geni/curriculum/blob/main/courses/algorithmic-thinking.md) | Data structures & algorithms | 42h |
+| 6 | [Discrete Math for Builders](https://github.com/CS-Geni/curriculum/blob/main/courses/discrete-math.md) | Math for computer science | 36h |
+| 7 | [Inside a Computer](https://github.com/CS-Geni/curriculum/blob/main/courses/inside-computers.md) | Systems & architecture | 38h |
+| 8 | [How Operating Systems Work](https://github.com/CS-Geni/curriculum/blob/main/courses/operating-systems.md) | Operating systems | 46h |
+| 9 | [Networks from First Principles](https://github.com/CS-Geni/curriculum/blob/main/courses/computer-networks.md) | Networks & distributed systems | 36h |
+| 10 | [Databases That Make Sense](https://github.com/CS-Geni/curriculum/blob/main/courses/database-design.md) | Databases | 30h |
+| 11 | [Git & Collaborative Development](https://github.com/CS-Geni/curriculum/blob/main/courses/git-collaboration.md) | Software engineering & DevOps | 12h |
+| 12 | [Shipping & Operating Software](https://github.com/CS-Geni/curriculum/blob/main/courses/shipping-software.md) | Software engineering & DevOps | 26h |
+| 13 | [Secure by Design](https://github.com/CS-Geni/curriculum/blob/main/courses/secure-by-design.md) | Security | 30h |
+| 14 | [Data & AI Foundations](https://github.com/CS-Geni/curriculum/blob/main/courses/data-ai-foundations.md) | AI & data | 40h |
+| 15 | [Build Your Own Language](https://github.com/CS-Geni/curriculum/blob/main/courses/crafting-language.md) | Advanced electives | 52h |
 
-## Explore CS-Geni
+Each course page lists outcomes, modules, the capstone, and the books to read beside it. The books stay on their authors' sites.
 
-[Open the learning platform](https://cs-geni.github.io/public/) to browse courses, lessons, and resources with progress saved in your browser.
+## What is in this repository
 
-The original interactive demo remains available as the [public showcase](https://cs-geni.github.io/public/showcase/).
+- The compiled learning site in `index.html` and `assets/`
+- The original showcase in `showcase/`
+- A check that the showcase script parses and its demo behavior holds: `npm run check`
 
-## What is public here
+The application source, API, account system, and lesson scripts stay in the private `CS-Geni/codebase` repository. This repository does not contain server code, learner data, credentials, or production configuration.
 
-This repository contains the compiled static learning frontend, the original showcase and its visual assets, and lightweight tests. It does **not** contain private application source, server code, learner data, credentials, or private services.
+### How the site is published
 
-### How the app is published
-
-The frontend is built from private `CS-Geni/codebase` `main` with `VITE_BASE_PATH=/public/` and `VITE_STATIC_DEPLOYMENT=true`. Only compiled `dist/` output is committed here; no server code, source files, curriculum internals, or secrets are published.
+The pages are built from private `CS-Geni/codebase` `main` with `VITE_BASE_PATH=/public/` and `VITE_STATIC_DEPLOYMENT=true`. Only the compiled site is committed here. GitHub Pages serves it at [cs-geni.github.io/public](https://cs-geni.github.io/public/).
 
 ## Contributing
 
-Issues and pull requests that improve clarity, accessibility, visual polish, or the public showcase are welcome. Keep changes focused, beginner-friendly, and suitable for a fully public repository. Run `npm run check` before submitting a pull request.
+Issues and pull requests that improve clarity, accessibility, or the showcase are welcome.
+
+| Change | Send it to |
+| --- | --- |
+| Showcase, page text, or this README | This repository |
+| A course outcome, module, or book link | [curriculum](https://github.com/CS-Geni/curriculum) |
+| A lab | [labs](https://github.com/CS-Geni/labs) |
+| A capstone checklist | [projects](https://github.com/CS-Geni/projects) |
+
+Run `npm run check` before opening a pull request here. Keep the change small enough to review, and write it for a beginner.
 
 ## Privacy and security
 
-Never submit secrets, credentials, personal learner data, private curriculum, proprietary material, production configuration, or implementation copied from private CS-Geni systems. Treat every commit, issue, build log, and pull request in this repository as public.
+Do not commit secrets, credentials, personal learner data, private lesson scripts, production configuration, or code copied from private CS-Geni systems. Treat every commit, issue, build log, and pull request here as public.
 
 ## License
 
-Original demo code in this repository is available under the [MIT License](LICENSE).
+Original code in this repository is [MIT](LICENSE). Linked books keep the license printed on their own sites.
